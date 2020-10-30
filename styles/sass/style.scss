@@ -1,10 +1,12 @@
 @import 'utilities/variables';
 @import 'utilities/mixins';
 @import 'utilities/functions';
+@import 'utilities/global';
 @import 'home/home';
 @import 'layout/navbar';
+@import 'layout/nav-mediaq';
 @import 'layout/footer';
-@import 'home/home';
+@import 'layout/foot-mediaq';
 @import 'home/mediaq';
 @import 'blog/blog';
 @import 'blog/mediaq';

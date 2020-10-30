@@ -1,0 +1,98 @@
+// Header style
+@mixin hero-style {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    margin-top: -1rem;
+}
+
+// Nav fonts
+@mixin nav-font {
+    color: $black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font: {
+        family: $content-font;
+        size: 22.5px;
+        weight: 700;
+    }
+}
+
+
+// Find Something New font
+@mixin h1-font {
+    color: $plum;
+    line-height: calc(64px * 1.25);
+    font: {
+        family: $header-font;
+        size: calc(110px * 1.25);
+        weight: 200;
+    }
+}
+
+// Get in touch, Blog headings font
+@mixin h2-font {
+    color: $plum;
+    line-height: 92px;
+    font: {
+        family: $header-font;
+        size: 80px;
+    }
+}
+
+
+// Communications headings font
+@mixin h3-font {
+    color: $black;
+    line-height: 1.6px;
+    font: {
+        family: $header-font;
+        size: 52px;
+    }
+}
+
+// What is under + This month headings font
+@mixin h4-font {
+    color: $plum;
+    line-height: 1.2px;
+    text-transform: uppercase;
+    font: {
+        family: $header-font;
+        size: 60px;
+        weight: 200;
+    }
+}
+
+
+// Popular + Shoes around headings font
+@mixin h5-font {
+    color: $black;
+    line-height: 1.2px;
+    font: {
+        family: $header-font;
+        size: 52px;
+    }
+}
+
+// New Addition + Meet real headings font
+@mixin h6-font {
+    color: $black;
+    letter-spacing: 1.3px;
+    font: {
+        family: $header-font;
+        size: 50px;
+        weight: 200;
+    }
+}
+
+@mixin read-more-button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    padding: 15px;
+    background-color: $brown;
+    font: {
+        family: $content-font;
+        size: 24px;
+    }
+}

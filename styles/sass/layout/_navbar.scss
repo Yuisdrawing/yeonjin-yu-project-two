@@ -1,0 +1,41 @@
+.logo {
+    font-family: $header-font;
+    font-size: 45.8px;
+    line-height: 46px;
+    letter-spacing: 1.1px;
+    color: $black;
+    margin-top: -2rem;
+    margin-left: 12.4rem;
+    text-decoration: none;
+}
+
+.dt-nav ul li a,
+.mb-nav ul li a {
+    @include nav-font;
+}
+
+.mb-nav {
+    display: none;
+}
+
+.dt-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-top: 2.5rem;
+    margin-right: 8rem;
+    li {
+        margin-right: 1.7rem;
+        a {
+            padding: 7px 13px;
+            transition: ease 0.1s;
+        }
+    }
+}
+
+.dt-nav ul li a:hover {
+    background-color: $plum;
+    color: $white;
+
+}
