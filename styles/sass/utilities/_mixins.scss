@@ -45,9 +45,11 @@
 @mixin h3-font {
     color: $black;
     line-height: 1.6px;
+    text-transform: uppercase;
     font: {
         family: $header-font;
-        size: 52px;
+        size: 58px;
+        weight: 200;
     }
 }
 
@@ -66,7 +68,7 @@
 
 // Popular + Shoes around headings font
 @mixin h5-font {
-    color: $black;
+    color: $brown;
     line-height: 1.2px;
     font: {
         family: $header-font;
@@ -94,5 +96,14 @@
     font: {
         family: $content-font;
         size: 24px;
+    }
+}
+
+
+@mixin p-font {
+    line-height: 1.5;
+    font: {
+        family: $content-font;
+        size: 24px; 
     }
 }

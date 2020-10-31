@@ -1,0 +1,15 @@
+footer {
+    background-color: $brown;
+    height: 45px;
+    margin-top: -1.3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    p {
+        font-family: $content-font;
+        font-size: 20px;
+        font-weight: 100;
+        color: $white;
+    }
+}

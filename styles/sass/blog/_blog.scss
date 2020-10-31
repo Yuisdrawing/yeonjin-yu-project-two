@@ -1,0 +1,22 @@
+// header
+
+.blog-background {
+    background: url(../shoe-kloset/blog-header.jpg);
+    @include hero-style;
+    
+    // h1
+    h1 {
+    @include h1-font;
+    width: 25%;
+    margin-top: 8rem;
+    margin-left: 12rem;
+    }
+    
+    // Overlapped image
+    .home-box-header {
+    margin-top: -24rem;
+    z-index: 15;
+    display: flex;
+    justify-content: flex-end;
+}
+}

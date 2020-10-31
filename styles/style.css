@@ -326,9 +326,9 @@ body {
 }
 
 .under-the-sea .text-container p {
-  font-family: "Lato", sans-serif;
-  font-size: 23px;
   line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -384,6 +384,12 @@ body {
   text-transform: uppercase;
 }
 
+.rm-wrapper .rm-container1 p, .rm-wrapper .rm-container2 p {
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+}
+
 .rm-container1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -403,9 +409,6 @@ body {
 }
 
 .rm-container1 p {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
-  font-size: 24px;
   text-align: right;
   margin: 0 0 0 12rem;
 }
@@ -441,10 +444,6 @@ body {
 }
 
 .rm-container2 p {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
-  font-size: 24px;
-  text-align: left;
   margin: 0 12rem 0 0;
 }
 
@@ -464,14 +463,47 @@ body {
   background-color: #FAE5FF;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 3rem 3fr 1fr;
-      grid-template-columns: 1fr 3fr 3rem 3fr 1fr;
-  -ms-grid-rows: 7rem 12rem 3rem 12rem 9rem;
-      grid-template-rows: 7rem 12rem 3rem 12rem 9rem;
+  -ms-grid-columns: 1fr 3fr 2rem 3fr 1fr;
+      grid-template-columns: 1fr 3fr 2rem 3fr 1fr;
+  -ms-grid-rows: 9rem 12rem 3.7rem 12rem 9rem;
+      grid-template-rows: 9rem 12rem 3.7rem 12rem 9rem;
 }
 
-.communication .comm-container {
-  border: solid 2px #4C0341;
+.communication .comm-container .heading {
+  margin: 0;
+}
+
+.communication .comm-container .heading span {
+  font-size: 1.8em;
+}
+
+.communication .comm-container .heading span i:nth-child(1) {
+  color: #4C0341;
+}
+
+.communication .comm-container .heading span i:nth-child(2) {
+  color: white;
+}
+
+.communication .comm-container .heading h3 {
+  color: #0D0D0D;
+  line-height: 1.6px;
+  text-transform: uppercase;
+  font-family: "Pompiere", cursive;
+  font-size: 58px;
+  font-weight: 200;
+  display: inline-block;
+  position: relative;
+  top: 1.5rem;
+  margin: 0 0 0 1rem;
+}
+
+.communication .comm-container p {
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  margin-top: 1rem;
+  margin-left: 5.8rem;
 }
 
 .communication .comm-container:nth-child(1) {
@@ -479,103 +511,114 @@ body {
       grid-column-start: 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.communication .comm-container:nth-child(1) h3 {
-  color: #0D0D0D;
-  line-height: 1.6px;
-  font-family: "Pompiere", cursive;
-  font-size: 52px;
-  margin: 0;
-}
-
-.communication .comm-container:nth-child(1) p {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  margin-left: 3rem;
 }
 
 .communication .comm-container:nth-child(2) {
-  background-color: #882C07;
   -ms-grid-column: 4;
       grid-column-start: 4;
   -ms-grid-row: 2;
       grid-row-start: 2;
 }
 
-.communication .comm-container:nth-child(2) h3 {
-  color: #0D0D0D;
-  line-height: 1.6px;
-  font-family: "Pompiere", cursive;
-  font-size: 52px;
-  margin: 0;
-}
-
-.communication .comm-container:nth-child(2) p {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  margin-left: 3rem;
-}
-
 .communication .comm-container:nth-child(3) {
-  background-color: #882C07;
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 4;
       grid-row-start: 4;
 }
 
-.communication .comm-container:nth-child(3) h3 {
-  color: #0D0D0D;
-  line-height: 1.6px;
-  font-family: "Pompiere", cursive;
-  font-size: 52px;
-  margin: 0;
-}
-
-.communication .comm-container:nth-child(3) p {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  margin-left: 3rem;
-}
-
 .communication .comm-container:nth-child(4) {
-  background-color: #882C07;
   -ms-grid-column: 4;
       grid-column-start: 4;
   -ms-grid-row: 4;
       grid-row-start: 4;
 }
 
-.communication .comm-container:nth-child(4) h3 {
-  color: #0D0D0D;
-  line-height: 1.6px;
+.banner {
+  background: url(../shoe-kloset/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 31vw;
+}
+
+.popular-month {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vw;
+}
+
+.popular-month img {
+  -webkit-box-shadow: 3rem 3rem 0px #FE6F19;
+          box-shadow: 3rem 3rem 0px #FE6F19;
+}
+
+.popular-month .texts {
+  width: 50%;
+  margin: 0 0 0 10rem;
+}
+
+.popular-month .texts h5 {
+  color: #882C07;
+  line-height: 1.2px;
   font-family: "Pompiere", cursive;
   font-size: 52px;
-  margin: 0;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 7rem 0 3rem 0;
 }
 
-.communication .comm-container:nth-child(4) h3 i {
-  border: solid 15px #4C0341;
-  border-radius: 50%;
-  background-color: #4C0341;
-  font-size: 26px;
-  color: #FFFFFF;
-}
-
-.communication .comm-container:nth-child(4) p {
+.popular-month .texts p {
+  line-height: 1.5;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
-  line-height: 24px;
-  margin-left: 3rem;
+  font-size: 24px;
+  margin-bottom: 3.5rem;
+}
+
+.popular-month .texts a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 15px;
+  background-color: #882C07;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+}
+
+section {
+  background-color: #FAE5FF;
+  height: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+section img:nth-child(1) {
+  margin: 0 1.5rem 0 0;
+}
+
+section img:nth-child(2) {
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+section img:nth-child(3) {
+  margin: 0 0rem 0 1.5rem;
 }
 
 .logo {
@@ -632,4 +675,58 @@ body {
 .dt-nav ul li a:hover {
   background-color: #4C0341;
   color: #FFFFFF;
+}
+
+footer {
+  background-color: #882C07;
+  height: 45px;
+  margin-top: -1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+.blog-background {
+  background: url(../shoe-kloset/blog-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+  margin-top: -1rem;
+}
+
+.blog-background h1 {
+  color: #4C0341;
+  line-height: calc(64px * 1.25);
+  font-family: "Pompiere", cursive;
+  font-size: calc(110px * 1.25);
+  font-weight: 200;
+  width: 25%;
+  margin-top: 8rem;
+  margin-left: 12rem;
+}
+
+.blog-background .home-box-header {
+  margin-top: -24rem;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
