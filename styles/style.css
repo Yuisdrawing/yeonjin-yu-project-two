@@ -355,7 +355,7 @@ body {
 
 .rm-wrapper {
   background-color: #FFFFFF;
-  height: 53vw;
+  height: 50.5vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -373,9 +373,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 
 .rm-wrapper .rm-container1 h6, .rm-wrapper .rm-container2 h6 {
@@ -387,6 +384,12 @@ body {
   text-transform: uppercase;
 }
 
+.rm-container1 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .rm-container1 img {
   margin-top: -3rem;
   margin-right: 1.7rem;
@@ -395,13 +398,11 @@ body {
 }
 
 .rm-container1 h6 {
-  border: solid 2px #4C0341;
   text-align: right;
   margin: 10rem 0 1rem 0;
 }
 
 .rm-container1 p {
-  border: solid 2px #4C0341;
   font-family: "Lato", sans-serif;
   line-height: 1.5;
   font-size: 24px;
@@ -410,7 +411,6 @@ body {
 }
 
 .rm-container1 a {
-  border: solid 2px #4C0341;
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -419,27 +419,163 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 24px;
   text-align: right;
+  margin-top: 2rem;
+}
+
+.rm-container2 {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .rm-container2 img {
   margin-top: 8rem;
+  margin-left: 1.7rem;
   -webkit-box-shadow: -3rem 3rem 0px #FE6F19;
           box-shadow: -3rem 3rem 0px #FE6F19;
 }
 
 .rm-container2 h6 {
-  border: solid 2px #4C0341;
   text-align: right;
+  margin: 6rem 0 1rem 0;
 }
 
 .rm-container2 p {
-  border: solid 2px #4C0341;
-  text-align: right;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-size: 24px;
+  text-align: left;
+  margin: 0 12rem 0 0;
 }
 
 .rm-container2 a {
-  border: solid 2px #4C0341;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 15px;
+  background-color: #882C07;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
   text-align: right;
+  margin-top: 2rem;
+}
+
+.communication {
+  background-color: #FAE5FF;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 3rem 3fr 1fr;
+      grid-template-columns: 1fr 3fr 3rem 3fr 1fr;
+  -ms-grid-rows: 7rem 12rem 3rem 12rem 9rem;
+      grid-template-rows: 7rem 12rem 3rem 12rem 9rem;
+}
+
+.communication .comm-container {
+  border: solid 2px #4C0341;
+}
+
+.communication .comm-container:nth-child(1) {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.communication .comm-container:nth-child(1) h3 {
+  color: #0D0D0D;
+  line-height: 1.6px;
+  font-family: "Pompiere", cursive;
+  font-size: 52px;
+  margin: 0;
+}
+
+.communication .comm-container:nth-child(1) p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 3rem;
+}
+
+.communication .comm-container:nth-child(2) {
+  background-color: #882C07;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.communication .comm-container:nth-child(2) h3 {
+  color: #0D0D0D;
+  line-height: 1.6px;
+  font-family: "Pompiere", cursive;
+  font-size: 52px;
+  margin: 0;
+}
+
+.communication .comm-container:nth-child(2) p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 3rem;
+}
+
+.communication .comm-container:nth-child(3) {
+  background-color: #882C07;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+}
+
+.communication .comm-container:nth-child(3) h3 {
+  color: #0D0D0D;
+  line-height: 1.6px;
+  font-family: "Pompiere", cursive;
+  font-size: 52px;
+  margin: 0;
+}
+
+.communication .comm-container:nth-child(3) p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 3rem;
+}
+
+.communication .comm-container:nth-child(4) {
+  background-color: #882C07;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+}
+
+.communication .comm-container:nth-child(4) h3 {
+  color: #0D0D0D;
+  line-height: 1.6px;
+  font-family: "Pompiere", cursive;
+  font-size: 52px;
+  margin: 0;
+}
+
+.communication .comm-container:nth-child(4) h3 i {
+  border: solid 15px #4C0341;
+  border-radius: 50%;
+  background-color: #4C0341;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+.communication .comm-container:nth-child(4) p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 3rem;
 }
 
 .logo {
