@@ -357,9 +357,14 @@ textarea:focus:-ms-input-placeholder {
   right: 0;
 }
 
+.home-background .home-box-header img {
+  width: 45vw;
+}
+
 .under-the-sea {
   background-color: #FAE5FF;
-  height: 42vw;
+  height: 100%;
+  padding: 15rem 0;
   margin-top: -1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,7 +382,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .under-the-sea .text-container {
-  margin: 350px;
+  width: 50%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,18 +435,9 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .rm-wrapper {
+  width: 100%;
   background-color: #FFFFFF;
-  height: 50.5vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  gap: 250px;
-}
-
-.rm-wrapper .rm-container1, .rm-wrapper .rm-container2 {
+  height: 52vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,7 +447,7 @@ textarea:focus:-ms-input-placeholder {
           flex-direction: column;
 }
 
-.rm-wrapper .rm-container1 h3, .rm-wrapper .rm-container2 h3 {
+.rm-wrapper .rm-container1 .texts h3, .rm-wrapper .rm-container2 .texts h3 {
   color: #0D0D0D;
   letter-spacing: 1.3px;
   font-family: "Pompiere", cursive;
@@ -460,36 +456,57 @@ textarea:focus:-ms-input-placeholder {
   text-transform: uppercase;
 }
 
-.rm-wrapper .rm-container1 p, .rm-wrapper .rm-container2 p {
+.rm-wrapper .rm-container1 .texts p, .rm-wrapper .rm-container2 .texts p {
   line-height: 1.5;
   font-family: "Lato", sans-serif;
   font-size: 24px;
 }
 
 .rm-container1 {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .rm-container1 img {
+  width: 42vw;
   margin-top: -3rem;
-  margin-right: 1.7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-box-shadow: 3rem 3rem 0px #FE6F19;
           box-shadow: 3rem 3rem 0px #FE6F19;
 }
 
-.rm-container1 h3 {
-  text-align: right;
-  margin: 10rem 0 1rem 0;
+.rm-container1 .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 9rem 0 18rem;
 }
 
-.rm-container1 p {
-  text-align: right;
-  margin: 0 0 0 12rem;
+.rm-container1 .texts h3 {
+  text-align: left;
+  margin: 0 0 1rem 0;
 }
 
-.rm-container1 a {
+.rm-container1 .texts p {
+  text-align: left;
+  margin: 0 0 0 0;
+}
+
+.rm-container1 .texts a {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -502,27 +519,54 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .rm-container2 {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .rm-container2 img {
+  width: 42vw;
   margin-top: 5rem;
   -webkit-box-shadow: -3rem 3rem 0px #FE6F19;
           box-shadow: -3rem 3rem 0px #FE6F19;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.rm-container2 h3 {
+.rm-container2 .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 19rem 0 9rem;
+}
+
+.rm-container2 .texts h3 {
   text-align: right;
-  margin: 6rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
-.rm-container2 p {
-  margin: 0 12rem 0 0;
+.rm-container2 .texts p {
+  text-align: right;
+  margin: 0 0 0 0;
 }
 
-.rm-container2 a {
+.rm-container2 .texts a {
   text-transform: uppercase;
   text-decoration: none;
   color: #FFFFFF;
@@ -573,6 +617,18 @@ textarea:focus:-ms-input-placeholder {
   margin: 0 0 0 1rem;
 }
 
+.communication .comm-container .heading h4 a {
+  text-decoration: none;
+  color: #0D0D0D;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+.communication .comm-container .heading h4 a:hover {
+  color: #FE6F19;
+  border-bottom: solid 2px #FE6F19;
+}
+
 .communication .comm-container p {
   line-height: 1.5;
   font-family: "Lato", sans-serif;
@@ -613,7 +669,7 @@ textarea:focus:-ms-input-placeholder {
   background: url(../shoe-kloset/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 31vw;
+  height: 30vw;
 }
 
 .popular-month {
@@ -627,7 +683,8 @@ textarea:focus:-ms-input-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30vw;
+  height: 100%;
+  padding: 4rem 0 7rem 0;
 }
 
 .popular-month img {
@@ -642,12 +699,11 @@ textarea:focus:-ms-input-placeholder {
 
 .popular-month .texts h5 {
   color: #882C07;
-  line-height: 1.2px;
   font-family: "Pompiere", cursive;
   font-size: 52px;
   text-transform: uppercase;
   font-weight: 200;
-  margin: 7rem 0 3rem 0;
+  margin: 5rem 0 2rem 0;
 }
 
 .popular-month .texts p {
@@ -669,7 +725,8 @@ textarea:focus:-ms-input-placeholder {
 
 section {
   background-color: #FAE5FF;
-  height: 35vw;
+  height: 100%;
+  padding: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,19 +738,21 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 0;
 }
 
 section img:nth-child(1) {
-  margin: 0 1.5rem 0 0;
+  margin: 1rem;
 }
 
 section img:nth-child(2) {
-  margin: 0 1.5rem 0 1.5rem;
+  margin: 1rem;
 }
 
 section img:nth-child(3) {
-  margin: 0 0rem 0 1.5rem;
+  margin: 1rem;
 }
 
 .logo {
@@ -784,10 +843,214 @@ footer p {
   margin: 0;
 }
 
+@media (max-width: 1750px) {
+  .home-background .home-box-header {
+    margin-top: -28rem;
+    z-index: 15;
+    position: absolute;
+    right: 0;
+  }
+  .home-background .home-box-header img {
+    width: 42vw;
+  }
+  .under-the-sea {
+    padding: 10rem 0;
+  }
+  .rm-wrapper {
+    height: 100%;
+  }
+  .rm-wrapper .rm-container1 .texts {
+    margin: 3rem 5rem 3rem 10rem;
+  }
+  .rm-wrapper .rm-container2 .texts {
+    margin: 6rem 10rem 3rem 5rem;
+  }
+  .communication {
+    -ms-grid-columns: 1fr 3fr 2rem 3fr 1fr;
+        grid-template-columns: 1fr 3fr 2rem 3fr 1fr;
+    -ms-grid-rows: 9rem 12rem 7rem 12rem 9rem;
+        grid-template-rows: 9rem 12rem 7rem 12rem 9rem;
+  }
+}
+
 /* Larger desktops */
+@media (max-width: 1400px) {
+  .home-background h1 {
+    margin-left: 2rem;
+  }
+  .home-background .home-box-header img {
+    display: none;
+  }
+  .under-the-sea .text-container {
+    width: 70%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .under-the-sea .text-container h2 {
+    color: #4C0341;
+    line-height: 1.2px;
+    text-transform: uppercase;
+    font-family: "Pompiere", cursive;
+    font-size: 60px;
+    font-weight: 200;
+    margin: 0;
+    line-height: 60px;
+  }
+  .under-the-sea .text-container p {
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
+  .communication {
+    -ms-grid-columns: 1fr 5fr 2rem 5fr 1fr;
+        grid-template-columns: 1fr 5fr 2rem 5fr 1fr;
+    -ms-grid-rows: 9rem 12rem 10rem 12rem 13rem;
+        grid-template-rows: 9rem 12rem 10rem 12rem 13rem;
+  }
+}
+
+@media (max-width: 1133px) {
+  .home-background {
+    height: 70vw;
+  }
+  .rm-wrapper {
+    height: 100%;
+  }
+  .rm-wrapper .rm-container1 .texts {
+    margin: 3rem 1rem 3rem 8rem;
+  }
+  .rm-wrapper .rm-container2 .texts {
+    margin: 6rem 9rem 3rem 2rem;
+  }
+  .communication {
+    -ms-grid-columns: 1fr 5fr 2rem 5fr 1fr;
+        grid-template-columns: 1fr 5fr 2rem 5fr 1fr;
+    -ms-grid-rows: 9rem 12rem 15rem 12rem 13rem;
+        grid-template-rows: 9rem 12rem 15rem 12rem 13rem;
+  }
+}
+
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .rm-wrapper .rm-container1, .rm-wrapper .rm-container2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rm-wrapper .rm-container1 img, .rm-wrapper .rm-container2 img {
+    width: 100%;
+    margin-top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .rm-wrapper .rm-container1 .texts, .rm-wrapper .rm-container2 .texts {
+    margin: 5rem 3rem 5rem 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .rm-wrapper .rm-container1 .texts h3, .rm-wrapper .rm-container2 .texts h3 {
+    text-align: center;
+  }
+  .rm-wrapper .rm-container1 .texts p, .rm-wrapper .rm-container2 .texts p {
+    text-align: center;
+  }
+  .communication {
+    -ms-grid-columns: 1fr 10fr 2rem 10fr 1fr;
+        grid-template-columns: 1fr 10fr 2rem 10fr 1fr;
+    -ms-grid-rows: 5rem 20rem 8rem 20rem 5rem;
+        grid-template-rows: 5rem 20rem 8rem 20rem 5rem;
+  }
+  .popular-month {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 4rem 2rem 7rem 2rem;
+  }
+  .popular-month img {
+    display: none;
+  }
+  .popular-month .texts {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .popular-month .texts h5 {
+    text-align: center;
+  }
+  .popular-month .texts p {
+    text-align: center;
+  }
+}
+
 /* Landscape phone to portrait tablet */
+@media (max-width: 850px) {
+  .home-background {
+    height: 90vw;
+  }
+  .home-background h1 {
+    font-size: 16vw;
+    line-height: 10vw;
+  }
+  .communication {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 4rem 2rem 2rem 2rem;
+  }
+  .communication .comm-container {
+    margin-bottom: 2rem;
+  }
+}
+
 /* Landscape phones and down */
+@media (max-width: 500px) {
+  .home-background {
+    height: 130vw;
+    margin-top: -5rem;
+  }
+  .home-background h1 {
+    position: absolute;
+    bottom: 30rem;
+  }
+  .home-background .logo {
+    display: none;
+  }
+  .communication {
+    margin: 4rem 1rem 2rem 0rem;
+  }
+  .communication .heading h4 a {
+    font-size: 50px;
+  }
+}
+
 .blog-background {
   background: url(../shoe-kloset/blog-header.jpg);
   background-size: cover;
@@ -1044,7 +1307,6 @@ article .article-container img {
 
 article .article-container h3 {
   color: #882C07;
-  line-height: 1.2px;
   font-family: "Pompiere", cursive;
   text-transform: uppercase;
   font-weight: 200;
@@ -1225,7 +1487,6 @@ article .post-comment .posting .input button {
 @media (max-width: 648px) {
   article .article-container h3 {
     color: #882C07;
-    line-height: 1.2px;
     font-family: "Pompiere", cursive;
     font-weight: 200;
     margin: 0 0 0 1.2rem;

@@ -1,21 +1,199 @@
-@media (max-width: 1750px) {}
 
+
+@media (max-width: 1750px) {
+    .home-background {
+        .home-box-header {
+            margin-top: -28rem;
+            z-index: 15;
+            position: absolute;
+            right: 0;
+            img {
+                width: 42vw;
+            }
+        }
+    }
+    .under-the-sea {
+        padding: 10rem 0;
+    }
+    .rm-wrapper {
+        height: 100%;
+        .rm-container1 {
+            .texts {
+                margin: 3rem 5rem 3rem 10rem;
+            }
+        }
+        .rm-container2 {
+            .texts {
+                margin: 6rem 10rem 3rem 5rem;
+            }
+        }
+    }
+    .communication {
+        grid-template-columns: 1fr 3fr 2rem 3fr 1fr;
+        grid-template-rows: 9rem 12rem 7rem 12rem 9rem;
+    }
+}
 
 
 /* Larger desktops */
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+    .home-background {
+        h1 {
+            margin-left: 2rem;
+        }
+        .home-box-header {
+            img {
+                display: none;
+            }
+        }
+    }
+    .under-the-sea {
+        .text-container {
+            width: 70%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                @include h4-font;
+                margin: 0;
+                line-height: 60px;
+            }
+            p {
+                @include p-font;
+
+                text-align: center;
+            }
+        }
+    }
+    .communication {
+        grid-template-columns: 1fr 5fr 2rem 5fr 1fr;
+        grid-template-rows: 9rem 12rem 10rem 12rem 13rem;
+    }
+}
+
+
+
+@media (max-width: 1133px) {
+    .home-background {
+        height: 70vw;
+    }
+
+    .rm-wrapper {
+        height: 100%;
+        .rm-container1 {
+            .texts {
+                margin: 3rem 1rem 3rem 8rem;
+            }
+        }
+        .rm-container2 {
+            .texts {
+                margin: 6rem 9rem 3rem 2rem;
+            }
+        }
+    }
+
+    .communication {
+        grid-template-columns: 1fr 5fr 2rem 5fr 1fr;
+        grid-template-rows: 9rem 12rem 15rem 12rem 13rem;
+    }
+}
 
 
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {}
-
+@media (max-width: 940px) {
+    .rm-wrapper {
+        .rm-container1, .rm-container2 {
+            flex-direction: column;
+            img {
+                width: 100%;
+                margin-top: 0;
+                box-shadow: none;
+            }
+            .texts {
+                margin: 5rem 3rem 5rem 3rem;
+                align-items: center;
+                align-content: center;
+                h3 {
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .communication {
+        grid-template-columns: 1fr 10fr 2rem 10fr 1fr;
+        grid-template-rows: 5rem 20rem 8rem 20rem 5rem;
+    }
+    .popular-month {
+        flex-direction: column;
+        padding: 4rem 2rem 7rem 2rem;
+        img {
+            display: none;
+        }
+        .texts {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h5 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
 
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {}
+@media (max-width: 850px) {
+    .home-background {
+        height: 90vw;
+        h1 {
+            font-size: 16vw;
+            line-height: 10vw;
+        }
+    }
+    .communication {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 2rem 2rem 2rem;
+        .comm-container {
+            margin-bottom: 2rem;
+        }
+    }
+}
 
 
 
 /* Landscape phones and down */
-@media (max-width: 480px) {}
+@media (max-width: 500px) {
+    .home-background {
+        height: 130vw;
+        margin-top: -5rem;
+        h1 {
+            position: absolute;
+            bottom: 30rem;
+        }
+        .logo {
+            display: none;
+        }
+    }
+    .communication {
+        margin: 4rem 1rem 2rem 0rem;
+        .heading {
+            h4 {
+                a {
+                    font-size: 50px;
+                }
+                
+            }
+        }
+    }
+}
