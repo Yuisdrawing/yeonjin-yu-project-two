@@ -4,15 +4,17 @@
     line-height: 46px;
     letter-spacing: 1.1px;
     color: $black;
-    margin-top: -2rem;
+    margin-top: 0rem;
     margin-left: 12.4rem;
     text-decoration: none;
+    width: 3rem;
 }
 
 .dt-nav ul li a,
 .mb-nav ul li a {
     @include nav-font;
 }
+
 
 .mb-nav {
     display: none;
@@ -37,5 +39,4 @@
 .dt-nav ul li a:hover {
     background-color: $plum;
     color: $white;
-
 }
