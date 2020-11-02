@@ -1,0 +1,263 @@
+
+
+@media (max-width: 1750px) {
+    .contact-background {
+        .send-message {
+        margin-top: -2rem;
+        right: 0;
+        width: 65%;
+        }
+    }
+    .info-section {
+    margin: 10rem 0rem 15rem 3rem;
+    }
+}
+
+/* Larger desktops */
+@media (max-width: 1400px) {
+    .contact-background {
+        height: 50vw;
+        h1 {
+            font-size: 110px;
+            text-align: center;
+            position: relative;
+            right: 0;
+            top: 0;
+        }
+    }
+    .send-message {
+        display: none;
+    }
+    .send-message2 {
+        display: block;
+        background-color: $white;
+        margin-top: -2rem;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        box-shadow: none;
+        z-index: 0;
+        border-left: solid 3rem $orange;
+        border-bottom: solid 3rem $orange;
+        .message {
+            text-align:center;
+            margin: 5rem;
+            position: relative;
+            .info {
+                display: flex;
+                justify-content: space-between;
+                border: none;
+                font-size: 26px;
+                input[type="text"],
+                input[type="email"] {
+                    box-sizing: border-box;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    outline: none;
+                    background-color: $white;
+                    height: 2rem;
+                    padding: 2rem;
+                    width: 47%;
+                    border: 0;
+                    border-bottom: 2px solid $orange;
+                    transition: ease 0.2s;
+                }
+                input:focus,
+                input:active {
+                    border: 0;
+                    border-bottom: 2px solid $orange;
+                    background-color: $pink;
+                }
+            }
+            .input {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: none;
+                font-size: 26px;
+                textarea {
+                    outline: none;
+                    border: solid 2px $orange;
+                    background-color: $white;
+                    padding: 2rem;
+                    margin: 1.5rem 0;
+                    color: $black;
+                    height: 15rem;
+                    resize: none;
+                    overflow: auto;
+                    transition: ease 0.2s;
+                }
+                textarea:focus,
+                textarea:active {
+                    border: 0;
+                    border: solid 2px $orange;
+                    background-color: $pink;
+                }
+                button {
+                    border: none;
+                    background-color: $brown;
+                    color: $white;
+                    padding: 1.5rem 0;
+                    margin-top: 1.5rem;
+                    outline: none;
+                    transition: 0.1s;
+                    font-size: 30px;
+                }
+                button:focus,
+                button:active {
+                    background-color: $plum;
+                }
+            }
+        }
+    }
+    .info-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50rem 0 10rem 0;
+        .sm-icons {
+            width: 70%;
+            margin-bottom: 2rem;
+            justify-content: space-around;
+        li {
+            a {
+                font-size: 72px;
+            }
+        }
+    }
+    h2 {
+        font-weight: 200;
+        font-size: 76px;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-left: 0;
+        }
+    }
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .contact-background {
+        height: 60vw;
+        h1 {
+            margin-top: 14vw;
+        }
+    }
+    .send-message2 {
+        margin-top: 0;
+        .message {
+            text-align:center;
+            margin: 2rem;
+            position: relative;
+            .info {
+                flex-direction: column;
+                align-items: center;
+                input[type="text"],
+                input[type="email"] {
+                    height: 3rem;
+                    padding: 3rem;
+                    width: 100%;
+                    border-bottom: 3px solid $orange;
+                    transition: ease 0.2s;
+                    margin-top: 2rem;
+                }
+                input:focus,
+                input:active {
+                    border-bottom: 3px solid $orange;
+                }
+            }
+            .input {
+                textarea {
+                    border: solid 3px $orange;
+                    margin-top: 3rem;
+                    height: 20rem;
+                }
+                textarea:focus,
+                textarea:active {
+                    border: solid 3px $orange;
+                }
+                button {
+                    margin-top: 4rem;
+                    margin-bottom: 2rem;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .info-section {
+        margin: 65rem 0 10rem 0;
+    }
+
+
+    .contact-background {
+        height: 60vw;
+        h1 {
+            font-size: 80px;
+        }
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 500px) {
+    .contact-background {
+        background: none;
+        background-size: 0;
+        height: 5rem;
+        h1 {
+            display: none;
+        }
+        .logo {
+            display: none;
+        }
+    }
+     .send-message2 {
+        border-left: 0;
+        border-bottom: solid 3rem $orange;
+        .message {
+            margin: 1rem;
+            position: relative;
+            .info {
+                font-size: 24px;
+                input[type="text"],
+                input[type="email"] {
+                    margin-bottom: 2rem;
+                    padding: 1rem;
+                }
+            }
+            .input {
+                font-size: 24px;
+                textarea {
+                    margin: 1.5rem 0;
+                    height: 20rem;
+                }
+            }
+        }
+    }
+    .info-section {
+        ul {
+            li {
+                a {
+                    font-size: 72px;
+                }
+            }
+        }
+    h2 {
+        font-size: 56px;
+        padding: 2rem;
+    }
+    p {
+        font-size: 24px;
+        padding: 2rem;
+        word-wrap: break-word;
+
+        }
+    }
+}
+

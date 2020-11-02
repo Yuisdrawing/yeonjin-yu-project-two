@@ -1,0 +1,13 @@
+@media (max-width: 500px) {
+    .dt-nav {
+        display: none;
+    }
+    .sticky-bar {
+        width: 100%;
+        height: 4rem;
+        background-color: $black;
+        top: 0;
+        position: fixed;
+        z-index: 30;
+    }
+}

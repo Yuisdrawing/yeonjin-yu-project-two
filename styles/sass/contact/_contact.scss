@@ -1,0 +1,150 @@
+.contact-background {
+    background: url(../shoe-kloset/contact-image.jpg);
+    @include hero-style;
+    height: 37vw;
+    
+    // h1
+    h1 {
+        font-family: $header-font;
+        color: $plum;
+        font-size: 98px;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-top: 8rem;
+        text-align: center;
+        position: relative;
+        right: 4rem;
+        top: 1rem;
+    }
+}
+
+.send-message,
+.send-message2 {
+    background-color: $white;
+    margin-top: -2rem;
+    position: absolute;
+    right: 8rem;
+    width: 60%;
+    box-shadow: -3rem 3rem 0px $orange;
+    z-index: 10;
+    .message {
+        text-align:center;
+        margin: 5rem;
+        position: relative;
+        .info {
+            display: flex;
+            justify-content: space-between;
+            border: none;
+            input[type="text"],
+            input[type="email"] {
+                box-sizing: border-box;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                outline: none;
+                background-color: $white;
+                height: 2rem;
+                padding: 2rem;
+                width: 47%;
+                border: 0;
+                border-bottom: 2px solid $orange;
+                transition: ease 0.2s;
+            }
+            input:focus,
+            input:active {
+                border: 0;
+                border-bottom: 2px solid $orange;
+                background-color: $pink;
+            }
+        }
+        .input {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: none;
+            textarea {
+                outline: none;
+                border: solid 2px $orange;
+                background-color: $white;
+                padding: 2rem;
+                margin: 1.5rem 0;
+                color: $black;
+                height: 15rem;
+                resize: none;
+                overflow: auto;
+                transition: ease 0.2s;
+            }
+            textarea:focus,
+            textarea:active {
+                border: 0;
+                border: solid 2px $orange;
+                background-color: $pink;
+            }
+            button {
+                border: none;
+                background-color: $brown;
+                color: $white;
+                padding: 1rem 0;
+                margin-top: 1.5rem;
+                outline: none;
+                transition: 0.1s;
+            }
+            button:focus,
+            button:active {
+                background-color: $plum;
+            }
+        }
+    }
+}
+
+
+
+.send-message2 {
+    display: none;
+}
+
+
+.info-section {
+    margin: 10rem 0rem 10rem 10rem;
+}
+
+
+// Font sizes and styles
+.info, .input {
+    font-size: 20px;
+}
+.input button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.info-section {
+    .sm-icons {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        li {
+            margin: 0 1rem;
+            a {
+                color: $plum;
+                font-size: 32px;
+            }
+        }
+    }
+    h2 {
+        font-family: $header-font;
+        color: $plum;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 36px;
+        margin-left: 1rem;
+    }
+    p {
+        font-family: $content-font;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-left: 1rem;
+    }
+}

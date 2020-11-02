@@ -2,7 +2,6 @@
 @mixin hero-style {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vw;
     margin-top: -1rem;
 }
 
@@ -72,7 +71,6 @@
     line-height: 1.2px;
     font: {
         family: $header-font;
-        size: 52px;
     }
 }
 

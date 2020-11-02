@@ -1,22 +1,267 @@
 // header
-
 .blog-background {
     background: url(../shoe-kloset/blog-header.jpg);
     @include hero-style;
-    
+    height: 37vw;
     // h1
     h1 {
-    @include h1-font;
-    width: 25%;
-    margin-top: 8rem;
-    margin-left: 12rem;
+        font-family: $header-font;
+        color: $plum;
+        font-size: 98px;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-top: 8rem;
+        text-align: center;
+        position: relative;
+        right: 4rem;
+        top: 1rem;
     }
-    
+
     // Overlapped image
-    .home-box-header {
-    margin-top: -24rem;
-    z-index: 15;
+    .blog-box-header {
+        margin-top: -2rem;
+        position: absolute;
+        right: 0;
+        img {
+            width: 57.6vw;
+            box-shadow: -3rem 3rem 0px $orange;
+            z-index: 10;
+        }
+    }
+}
+
+
+
+.content-container {
     display: flex;
     justify-content: flex-end;
+    align-items: flex-start;
+    .run-img1 {
+        width: 33vw;
+        position: absolute;
+        left: 0;
+        margin-top: 8rem;
+        z-index: 10;
+    }
+    aside {
+        width: 25%;
+        background-color: $white;
+        margin-right: 3rem;
+        padding-top: 33rem;
+        position: relative;
+        top: 10rem;
+        .run-img2 {
+            display: none;
+        }
+    }
+    article {
+        width: 60.3%;
+        margin-left: 3rem;
+        .article-container {
+            background-color: $white;
+            padding: 33rem 10rem 3rem 3rem;
+            height: 100%;
+        }
+        .comment-container {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        margin: 3rem 13rem 4rem 3rem;
+            .comments {
+                display: flex;
+                flex-direction: column;
+                margin-left: 2rem;
+                p:nth-child(1) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .post-comment {
+        background-color: $pink;
+        height: 100%;
+        margin-bottom: 7rem;
+        .posting {
+            text-align:center;
+            margin-right: 13rem;
+            position: relative;
+            .info {
+                display: flex;
+                justify-content: space-between;
+                border: none;
+                input[type="text"],
+                input[type="email"] {
+                    box-sizing: border-box;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    outline: none;
+                    background-color: $pink;
+                    height: 2rem;
+                    padding: 2rem;
+                    width: 47%;
+                    border: 0;
+                    border-bottom: 2px solid $orange;
+                    transition: ease 0.2s;
+                }
+                input:focus,
+                input:active {
+                    border: 0;
+                    border-bottom: 2px solid $orange;
+                }
+            }
+            .input {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: none;
+                textarea {
+                    outline: none;
+                    border: solid 2px $orange;
+                    background-color: $pink;
+                    padding: 2rem;
+                    margin: 1.5rem 0;
+                    color: $black;
+                    height: 15rem;
+                    resize: none;
+                    overflow: auto;
+                }
+                textarea:focus,
+                textarea:active {
+                    border: 0;
+                    border: solid 2px $orange;
+                }
+                button {
+                    border: none;
+                    background-color: $plum;
+                    color: $white;
+                    padding: 1rem 0;
+                    margin-top: 1.5rem;
+                    outline: none;
+                    transition: 0.1s;
+                }
+                button:focus,
+                button:active {
+                    background-color: $brown;
+                }
+            }
+        }
+    }
 }
+
+
+
+
+
+// Fonts and styles
+aside {
+    .texts {
+        h2 {
+            font-family: $header-font;
+            text-transform: uppercase;
+            color: $plum;
+            font-size: 39px;
+            font-weight: 200;
+            margin-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            font-family: $content-font;
+            font-weight: 400;
+            font-size: 32px;
+            margin: 0 4rem 0 2rem;
+            line-height: 1.5;
+            margin-bottom: 4rem;
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: $orange;
+            }
+        }
+        ul {
+            margin: 0 2rem 3rem 1rem;
+            li {
+                font-family: $content-font;
+                font-weight: 400;
+                font-size: 28px;
+                color: $black;
+                a {
+                    text-decoration: none;
+                    line-height: 1.5;
+                    color: $black;
+                }
+                a:hover {
+                text-decoration: underline;
+                color: $orange;
+                }
+            }
+        }
+    }
+}
+
+article {
+    .article-container {
+        img {
+            display: none;
+        }
+        h3 {
+            @include h5-font;
+            text-transform: uppercase;
+            font-weight: 200;
+            margin: 0 0 0 1.6rem;
+            padding-top: 3rem;
+            font-size: 59px;
+            line-height: 59px;
+        }
+        p:nth-child(3) {
+            font-family: $content-font;
+            font-size: 24px;
+            margin-left: 2rem;
+            margin-top: 0rem;
+            font-weight: 600;
+        }
+        p:nth-child(4) {
+            font-family: $content-font;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-left: 2rem;
+            margin-top: 4rem;
+        }
+    }
+    h4 {
+        font-family: $header-font;
+        color: $plum;
+        font-size: 60px;
+        font-weight: 200;
+        margin: 3rem 0 0 1.5rem;
+    }
+    .comment-container {
+        p:nth-child(1) {
+            font-family: $content-font;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        p:nth-child(2) {
+            font-family: $content-font;
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    }
+    .post-comment {
+        .posting {
+            .info,
+            .input {
+                font-size: 20px;
+            }
+            .input button {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+        }
+    }
 }

@@ -1,5 +1,39 @@
 body {
-    max-width: 100vw;
+    background-color: $pink;
+    max-width: 1920px;
     margin: auto;
-    background-color: $black;
 }
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
+::placeholder {color: $black;}
+::-webkit-input-placeholder {color: $black;}
+:-ms-input-placeholder {color: $black;}
+::-ms-input-placeholder {color: $black;}
+:-moz-placeholder {
+    color: $black;
+    opacity:  1;
+}
+::-moz-placeholder {
+    color: $black;
+    opacity:  1;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
